@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <script>
@@ -7,7 +7,9 @@
     // Details: https://webdev.dartlang.org/angular/guide/router
     (function () {
       var m = document.location.pathname.match(/^(\/[-\w]+)+\/web($|\/)/);
-      document.write('<base href="' + (m ? m[0] : '/') + '" />');
+      var str = '<base href="' + (m ? m[0] : '/') + '" />';
+      console.log("document.write", str);
+      document.write(str);
     }());
   </script>
 
